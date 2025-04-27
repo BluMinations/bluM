@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BluMinations | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/uni-0553" rel="stylesheet">
+</head>
+
+<body>
+  <div id="bgDimmer"></div>
+
+  <!-- 🎮 Start Menu -->
+  <div id="startMenu" class="pokemon-menu">
+    <div class="dialog-box">
+      <p>Hi, I'm BluMinations!<br><br>
+        <span class="start-btn">▶ Press Start</span>
+      </p>
+      <button id="toggleMusic">🔊 Music: ON</button>
+    </div>
+  </div>
+
+  <!-- Main Content (hidden at first) -->
+  <div id="mainContent" style="display: none;">
+    <div class="about-section-wrapper">
+      <div class="about-card">
+        <img src="images/icon1.1.png" alt="About Frame" class="about-frame" />
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>Hi... and welcome! Bogged down by this life of mine with a cycle of headaches all running in my head of a classic overthinker...</p>
+          <p>I'm BluMinations or that's what my brand is called. I just content different forms of art, you name it (Don't do that). I'm trying out new things, so this is more of a showcase of what I'm doing. Many thanks to checking this out! Let's just have fun!</p>
+          <p>ʕっ•ᴥ•ʔっ... Blue + Ruminations = BluMinations</p>
+          <p>Click the locks on the left for more info</p>
+          <button id="readMoreBtn" class="pixel-button">▶ Read More of My Thoughts</button>
+        </div>
+      </div>
+
+      <img src="images/iconprof.png" alt="Pixel Character" class="about-sprite" />
+
+      <!-- Floating Icons -->
+      <img src="images/icon1.2.png" alt="Experience Icon" id="experienceIcon" class="floating-icon" style="display: none;" />
+      <img src="images/icon1.3.png" alt="Socials Icon" id="socialsIcon" class="floating-icon" style="display: none;" />
+      <img src="images/icon1.4.png" alt="Projects Icon" id="projectsIcon" class="floating-icon" style="display: none;" />
+    </div>
+  </div>
+
+  <!-- Popups OUTSIDE mainContent -->
+  <!-- Popup Modal for "Read More" -->
+  <div id="popupModal" class="popup-modal" style="display: none;">
+    <div class="popup-content">
+      <span class="close-btn read-more">&times;</span>
+      <p>...</p>
+    </div>
+  </div>
+
+  <!-- Experience Popup -->
+  <div id="experiencePopup" class="popup-modal" style="display: none;">
+    <div class="popup-content">
+      <span class="close-btn experience">&times;</span>
+      <h2>Experience</h2>
+      <p>I’ve dabbled in digital illustration, pixel art animation, content creation, and more!</p>
+    </div>
+  </div>
+
+  <!-- Socials Popup -->
+  <div id="socialsPopup" class="popup-modal" style="display: none;">
+    <div class="popup-content">
+      <span class="close-btn socials">&times;</span>
+      <h2>Socials</h2>
+      <p>Find me on Instagram, Twitter, and maybe YouTube soon!</p>
+    </div>
+  </div>
+
+  <!-- Projects Popup -->
+  <div id="projectsPopup" class="popup-modal" style="display: none;">
+    <div class="popup-content">
+      <span class="close-btn projects">&times;</span>
+      <h2>Projects</h2>
+      <p>I'm experimenting with pixel art, web dev, and storytelling!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <audio id="bgMusic" loop>
+    <source src="audio/lullaby (1).mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
